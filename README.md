@@ -30,7 +30,7 @@ Each challenge has its own sub-directory under `/challenges/`, and includes a RE
 
 #### [<img src="./images/SUMMIT_LOGO_OFFICIAL_2017.png" width="125" valign="middle" alt="Summit"/>   Official Summit User Guide & Documentation](https://docs.olcf.ornl.gov/systems/summit_user_guide.html)
 
-#### [<img src="./images/ibm-spectrum-lsf.png" width="170" valign="middle" alt="Summit"/>   Spectrum LSF Documentation (scheduler)](https://docs.olcf.ornl.gov/systems/summit_user_guide.html)
+#### [<img src="./images/ibm-spectrum-lsf.png" width="170" valign="middle" alt="Summit"/>   Spectrum LSF Documentation (scheduler)](https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_welcome/lsf_welcome.html)
 
 <br>
 <hr>
