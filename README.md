@@ -15,7 +15,7 @@ Summit, located at [Oak Ridge National Laboratory](https://www.ornl.gov/) in Oak
 - Total System Memory >10PB DDR4 + HBM + NVME
 
 ### Navigating this Session
-Here you will find the session agenda along with various resources to help get you up and running on Summit. We'll take a deep look at the system's design, discuss how research teams write programs for and run workloads on Summit, and you'll get to run your own. The session is guided by hands-on [***challenges***](challenges). 
+Here you will find the [session agenda](agenda.md) along with various resources to help get you up and running on Summit. We'll take a deep look at the system's design, discuss how research teams write programs for and run workloads on Summit, and you'll get to run your own. The session is guided by hands-on [***challenges***](challenges). 
 
 The [first challenge](./challenges/01_Obtain_Access_to_Summit) is to successfully log into Summit.
 
