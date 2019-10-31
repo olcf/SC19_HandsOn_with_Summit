@@ -1,6 +1,6 @@
 
 
-# Welcome to the SC19 HandsOn with Summit session!
+# Welcome to the SC19 Hands-On with Summit session!
 
 This repository contains the materials for the *[Hands-On with the Summit Supercomputer](https://sc19.supercomputing.org/presentation/?id=pec111&sess=sess412)* at SC19.
 
@@ -21,7 +21,7 @@ The [first challenge](./challenges/01_Obtain_Access_to_Summit) is to successfull
 
 Each challenge has its own sub-directory under `/challenges/`, and includes a README.md file and any additional files for that challenge. Challenges range in difficulty from introductory to very complex, and may require research and reference materials outside of what's provided in this repository.
 
-#####*P.S. Be on the lookout for giveaways hidden throughout!* 
+##### *P.S. Be on the lookout for giveaways hidden throughout!* 
 
 
 ### Helpful Links
@@ -30,7 +30,7 @@ Each challenge has its own sub-directory under `/challenges/`, and includes a RE
 
 #### [<img src="./images/SUMMIT_LOGO_OFFICIAL_2017.png" width="125" valign="middle" alt="Summit"/>   Official Summit User Guide & Documentation](https://docs.olcf.ornl.gov/systems/summit_user_guide.html)
 
-#### [<img src="./images/ibm-spectrum-lsf.png" width="170" valign="middle" alt="Summit"/>   Spectrum LSF Documentation (scheduler)](https://docs.olcf.ornl.gov/systems/summit_user_guide.html)
+#### [<img src="./images/ibm-spectrum-lsf.png" width="170" valign="middle" alt="Summit"/>   Spectrum LSF Documentation (scheduler)](https://www.ibm.com/support/knowledgecenter/en/SSWRJV_10.1.0/lsf_welcome/lsf_welcome.html)
 
 <br>
 <hr>
