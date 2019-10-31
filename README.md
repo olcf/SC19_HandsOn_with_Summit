@@ -1,7 +1,6 @@
 <img src="./images/olcf_logo.png" width="300" alt="Oak Ridge Leadership Computing Facility"/>
-<img src="./images/SC19-color-hor.png" style="float:right" width="150" alt="SC19"/>
-<br>
-<hr>
+<img src="./images/SC19-color-hor.png" align="right" width="150" alt="SC19"/>
+
 
 # Welcome to the SC19 HandsOn with Summit session!
 
