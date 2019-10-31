@@ -21,7 +21,7 @@ The [first challenge](./challenges/01_Obtain_Access_to_Summit) is to successfull
 
 Each challenge has its own sub-directory under `/challenges/`, and includes a README.md file and any additional files for that challenge. Challenges range in difficulty from introductory to very complex, and may require research and reference materials outside of what's provided in this repository.
 
-#####*P.S. Be on the lookout for giveaways hidden throughout!* 
+##### *P.S. Be on the lookout for giveaways hidden throughout!* 
 
 
 ### Helpful Links
