@@ -36,6 +36,6 @@ Each challenge has its own sub-directory under `/challenges/`, and includes a RE
 <hr>
 <br>
 <p align="center">
-  <img src="./images/SC19-color-hor.png" width="200" alt="SC19"><br><br>
-  <img src="./images/olcf_logo.png" width="400" alt="Oak Ridge Leadership Computing Facility">
+  <a href="https://sc19.supercomputing.org/"><img src="./images/SC19-color-hor.png" width="200" alt="SC19"></a><br><br>
+  <a href="https://www.olcf.ornl.gov/"><img src="./images/olcf_logo.png" width="400" alt="Oak Ridge Leadership Computing Facility"></a>
 </p>
