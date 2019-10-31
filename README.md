@@ -1,6 +1,6 @@
 
 
-# Welcome to the SC19 HandsOn with Summit session!
+# Welcome to the SC19 Hands-On with Summit session!
 
 This repository contains the materials for the *[Hands-On with the Summit Supercomputer](https://sc19.supercomputing.org/presentation/?id=pec111&sess=sess412)* at SC19.
 
