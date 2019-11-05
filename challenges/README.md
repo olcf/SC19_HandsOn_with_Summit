@@ -12,3 +12,4 @@ challenges listed below.
 - [01_Obtain_Access_to_Summit](01_Obtain_Access_to_Summit) <img src="../images/easy_badge.png" width="80">
 - [02_Basic_Workflow](02_Basic_Workflow) <img src="../images/easy_badge.png" width="80">
 - [03_Password_in_a_Haystack](03_Password_in_a_Haystack) <img src="../images/easy_badge.png" width="80">
+- [04_Find_the_Compiler_Flag](04_Find_the_Compiler_Flag) <img src="../images/easy_badge.png" width="80">
