@@ -3,6 +3,7 @@
 <h1>Find the Missing Compiler Flag</h1>
 OpenACC is a directive-based approach to programming for GPUs. Instead of using a low-level programming method like CUDA, where the programmer is responsible for transferring data between the CPU and GPU and writing GPU kernels, with a directive-based model, the programmer simply adds "hints" within the code which the compiler uses to transfer data and parallelize the code on the GPU. An additional benefit of this type of GPU programming model is that the code can be compiled for either a CPU or GPU simply by adding or removing compiler flags (whereas a CUDA code requires a GPU).
 
+&nbsp;
 In this challenge, you will need to find the compiler flag that enables GPU support in a simple OpenACC vector addition program. The single `#pragma acc parallel loop` (which is the hint to the compiler) line is the only change needed to make this a GPU code. But without the correct compiler flag, that line will be ignored and a CPU-only executable will be created. 
 
 
