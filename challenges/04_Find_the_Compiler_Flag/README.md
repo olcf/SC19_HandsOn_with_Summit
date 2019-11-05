@@ -9,6 +9,7 @@ In this challenge, you will need to find the compiler flag that enables GPU supp
 
 
 <h2>Step 1: Set Up the Programming Environment </h2>
+
 In order to run the provided OpenACC code, we will need to modify our programming environment. First, we will change the compiler to PGI:
 
 ```
@@ -22,11 +23,13 @@ $ module load cuda
 ```
 
 <h2>Step 2: Find the Necessary Compiler Flag</h2>
+
 Next, you will need to find the PGI compiler flag needed to compile the code with OpenACC-support. To do so, you can either search within the Summit User Guide or the PGI documentation. 
 
 > NOTE: Compiler flags differ between different compilers so make sure you find the correct flag for the PGI compiler.
 
 <h2>Step 3: Add the Compiler Flag to the Makefile and Compile</h2>
+
 Now that you think you found the correct compiler flag, add it to the end of the `CFLAGS = -Minfo=all` line in the Makefile. Then, compile the code by issuing the following command:
 
 ```
@@ -44,6 +47,7 @@ main:
 ```
 
 <h2>Step 4: Run the Program</h2>
+
 Now, test that you have correctly compiled the code with OpenACC-support by launching the executable on a compute node. To do so, issue the following command:
 
 ```
