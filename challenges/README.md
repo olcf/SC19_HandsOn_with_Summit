@@ -13,4 +13,5 @@ challenges listed below.
 - [02_Basic_Workflow](02_Basic_Workflow) <img src="../images/easy_badge.png" width="80">
 - [03_Password_in_a_Haystack](03_Password_in_a_Haystack) <img src="../images/easy_badge.png" width="80">
 - [04_Find_the_Compiler_Flag](04_Find_the_Compiler_Flag) <img src="../images/easy_badge.png" width="80">
+- [05_Parallel_Scaling_Performance](05_Parallel_Scaling_Performance) <img src="../images/medium_badge.png" width="80">
 - [0X_Bonus_Cache](0X_Bonus_Cache) <img src="../images/harder_badge.png" width="80">
