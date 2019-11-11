@@ -8,4 +8,4 @@ Variability is common in CPU manufacturing, and individual cores that do not mee
 
 Considering that pairs of cores in AC922 servers share L2 and L3 cache, disabling one core would give full cache access to the remaining enabled core.
 
-This challenge is to find a disabled core on Summit among the compute nodes reserved for this event.
+This challenge is to identify a disabled core on Summit among the 18 compute nodes reserved for this event.
