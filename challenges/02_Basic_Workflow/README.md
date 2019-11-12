@@ -38,6 +38,7 @@ $ make
 Based on the commands contained in the `Makefile`, an executable named `run` will be created.
 
 <h2>Step 3: Running the Program</h2>
+
 In order to run a program on Summit's compute nodes, you must submit a "job" to the batch scheduler (LSF is the scheduler on Summit). To do so, you'll use the `submit.lsf` batch script, which contains a set of commands to request 1 compute node and launch the `run` executable on that node with the job launcher (`jsrun` is the job launcher on Summit). To launch the job, issue the command
 
 ```
@@ -45,6 +46,7 @@ $ bsub submit.lsf
 ```
 
 <h2>Step 4: Monitoring Your Job</h2>
+
 Now that the job has been submitted, you can monitor its progress. Is it running yet? Has it finished? To find out, you can issue the command 
 
 ```
