@@ -1,22 +1,20 @@
-[**Next**](../02_Basic_Workflow/)
-
-<h1>Obtaining Access to Summit</h1>
+# Obtaining Access to Summit
 
 Please follow the instructions below to obtain access to OLCF's Summit Supercomputer.
 
-<h2>Step 1: Get an RSA token</h2>
+## Step 1: Get an RSA token
 
-If you were not given an RSA token when you arrived, please request one now. Once you have your RSA token, please move on to Step 2.
+If you were not given a temporary RSA token when you arrived, please request one now. Once you have your RSA token, please move on to Step 2.
 
-<h2>Step 2: Set up your RSA token</h2>
+## Step 2: Set up your RSA token
 
-<img class="kb-img-right" src="https://www.olcf.ornl.gov/wp-content/uploads/2012/03/rsa_securid_fob.gif" alt="Image of an RSA SecudID fob" width="40%" />
+<img class="kb-img-right" src="https://www.olcf.ornl.gov/wp-content/uploads/2012/03/rsa_securid_fob.gif" alt="Image of an RSA SecudID fob" width="30%" />
 
-<h4>Activating a SecurID<sup>®</sup> Token</h4>
+### Activating a SecurID<sup>®</sup> Token
 
-Follow the steps described below to set up your SecurID Token.
+Follow the steps described below to set up your RSA SecurID Token.
 
-> <strong>NOTE:</strong> Your username is printed on the front of the yellow envelope that your RSA token came in.
+> <strong>NOTE:</strong> Your username is printed on the front of the yellow envelope that your RSA token came in. It should begin with `csep`.
 
 <ol>
  	<li>Initiate an SSH connection to home.ccs.ornl.gov using your OLCF username.
@@ -29,12 +27,16 @@ Follow the steps described below to set up your SecurID Token.
  	<li>Your PIN is now set and you are logged into home.ccs.ornl.gov.</li>
 </ol>
 
-<h4>Using a SecurID<sup>®</sup> Token (fob) to Log In to Summit</h4>
+### Using a SecurID<sup>®</sup> Token (fob) to Log In to Summit
+
+> NOTE: If you are still logged in to `home.ccs.ornl.gov` from the previous section, please exit now by executing the command `exit`. To find out if you are still logged into home, you can type `hostname`. 
 
 Initiate a connection to Summit using your OLCF username: <code>ssh userid<i></i>@summit.olcf.ornl.gov</code>
 
-When prompted for your PASSCODE, enter your PIN followed by the 6 digits shown on your SecurID<sup>®</sup> token before pressing enter. For example, if your pin is <code>1234</code> and the 6 digits on the token are <code>000987</code>, enter <code>1234000987</code> when you are prompted for a PASSCODE.
+When prompted for your PASSCODE, enter your PIN followed by the 6 digits shown on your token before pressing enter. For example, if your pin is <code>1234</code> and the 6 digits on the token are <code>000987</code>, enter <code>1234000987</code> when you are prompted for a PASSCODE.
 
 > <strong>NOTE:</strong> The 6-digit code displayed on the SecurID token can only be used once. If prompted for multiple PASSCODE entries, always allow the 6-digit code to change between entries. Re-using the 6-digit code can cause your account to be automatically disabled.
 
-[**Next**](../02_Basic_Workflow/)
+Once you have successfully logged in to Summit, you can move on to other challenges.
+
+<hr>
