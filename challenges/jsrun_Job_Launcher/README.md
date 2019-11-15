@@ -1,12 +1,12 @@
 # `jsrun` Job Launcher
 
-When running programs on a workstation, most of the time you can simply execute `./a.out` and wait for the results. On most HPC cluster, you must use a "batch scheduler" to request a number of compute nodes to run on and a "job launcher" to execute your program on the compute node(s) you were allocated. In this challenge, you will learn the basics of how to submit jobs on Summit with IBM's `jsrun` job launcher.
+When running programs on a workstation, most of the time you can simply execute `./a.out` and wait for the results. On most HPC cluster, you must use a "batch scheduler" to request one or more compute nodes to run on and a "job launcher" to execute your program on the compute node(s) you were allocated. In this challenge, you will learn the basics of how to launch jobs on Summit with IBM's `jsrun` job launcher.
 
 ## Summit Nodes
 
 Before getting started, it's instructive to look at a diagram of a Summit node to understand the terminology we'll use. 
 
-Each Summit node contains 2 IBM Power9 CPU and 6 NVIDIA V100 GPUs (1 CPU and 3 GPUs per socket). Each of the Power9 CPUs have 21 physical cores - each with 4 hardware threads. So, looking at the image below, physical core 0 contains hardware threads 000-003, physical core 1 contains hardware threads 004-007, etc. The numbering of hardware threads will be important as we proceed.
+Each Summit node contains 2 IBM Power9 CPUs and 6 NVIDIA V100 GPUs (1 CPU and 3 GPUs per socket). Each of the Power9 CPUs have 21 physical cores - each with 4 hardware threads. So, looking at the image below, physical core 0 contains hardware threads 000-003, physical core 1 contains hardware threads 004-007, etc. The numbering of hardware threads will be important as we proceed.
 
 <br>
 <center>
@@ -19,7 +19,7 @@ Each Summit node contains 2 IBM Power9 CPU and 6 NVIDIA V100 GPUs (1 CPU and 3 G
 Resource sets are a central theme when discussing `jsrun`, so we should begin by defining them. 
 
 * A <u>resource set</u> is a collection of resources (e.g., CPU cores, GPUs) that can be assigned to one or more tasks. 
-* All resource sets are the same for a single `jsrun`
+* All resource sets are the same for a single `jsrun` command
 * A resource set cannot span more than 1 node.
 
 So a resource set might simply be a whole node (i.e., 42 physical CPU cores and 6 GPUs) or a subset of a node (e.g., 1 physical CPU core and 1 GPU). We'll use color-coded images like the one below to describe resource sets throughout this document, where each different colored set of CPUs and GPUs is a different resource set. In the diagram, in the M[T] numbering scheme, M represents the MPI rank ID and T represents the OpenMP thread ID. So for example, 2[1] represents MPI rank 2, OpenMP thread 1. This will become clearer as we continue below.
@@ -52,7 +52,7 @@ The first step to contructing a `jsrun` command is to define the resource sets y
 | `--tasks_per_rs` | `-a`         | Number of tasks per resource set          |
 
 <br>
-There are a couple other flags we'll cover as well, but for now, let's just move forward with these.
+There is another flag we'll cover as well, but for now, let's just move forward with these.
 
 ## Hello_jsrun
 
@@ -78,7 +78,7 @@ $ cp ../submit.lsf .
 
 ## Example 1
 
-As a first example, let's try to create the layout shown in the image below. Here, we are essentially splitting up the resources on our node among 6 resource sets, where each resource set is shown in a different color and in the M[T] numbering scheme, M represents the MPI rank ID and T represents the OpenMP thread ID. So, for example, 2[0] represents MPI rank 2 - OpenMP thread 0. Based on the image, this means that each resource set contains 1 MPI rank and a single OpenMP thread. 
+As a first example, let's try to create the layout shown in the image below. Here, we are essentially splitting up the resources on our node among 6 resource sets, where each resource set is shown as a different color and contains 7 physical CPU cores and 1 GPU. Recall that in the M[T] numbering scheme, M represents the MPI rank ID and T represents the OpenMP thread ID. So, for example, 2[0] represents MPI rank 2 - OpenMP thread 0. Based on the image, this means that each resource set contains 1 MPI rank and 1 OpenMP thread. 
 
 <br>
 <center>
@@ -86,7 +86,7 @@ As a first example, let's try to create the layout shown in the image below. Her
 </center>
 <br>
 
-Now let's try to create the `jsrun` command that will give us this layout. The first thing we need to do is define our resource sets. As shown in the image, each resource set will contain 7 physical cores (`-c7`), 1 GPU (`-g1`), and 1 MPI rank (`-a1`). To set the number of OpenMP threads, we will use the `OMP_NUM_THREADS` environment variable. Now that we have defined our resource sets, we can use `-n6` to create 6 of them.
+Now let's try to create the `jsrun` command that will give us this layout. The first thing we need to do is define our resource sets. As shown in the image, each resource set will contain 7 physical CPU cores (`-c7`), 1 GPU (`-g1`), 1 MPI rank (`-a1`), and 1 OpenMP thread. To set the number of OpenMP threads, we will use the `OMP_NUM_THREADS` environment variable. Now that we have defined our resource sets, we can use `-n6` to create 6 of them.
 
 So you should edit the `submit.lsf` file to read
 
@@ -96,7 +96,7 @@ export OMP_NUM_THREADS=1
 jsrun -n6 -c7 -g1 -a1 ./hello_jsrun | sort
 ```
 
-After running this code (`bsub submit.lsf`), you should find the following information in the output file `testing_jsrun.JOBID`:
+After running this code with `bsub submit.lsf`, you should find the following information in the output file `testing_jsrun.JOBID`:
 
 
 ```
@@ -115,7 +115,7 @@ As you can see from the output, the program prints the MPI rank ID and the OpenM
 
 * The actual hardware thread (within a physical core) that an MPI rank runs on will vary from run to run.
 * In the output, `GPU_id` represents the node-level GPU ID (numbered 0-5) as shown in the image. 
-* In the output, `RT_GPU_id` represents the GPU ID as seen from the CUDA runtime. Basically, each resource set numbers its GPUs starting from 0, which is why `RT_GPU_id` is 0 for all rows above.
+* In the output, `RT_GPU_id` represents the GPU ID as seen from the CUDA runtime. Basically, within each resource set, the runtime numbers its GPUs starting from 0, which is why `RT_GPU_id` is 0 for all rows above.
 
 ## Example 2
 

@@ -21,7 +21,5 @@
 # number of OpenMP threads
 export OMP_NUM_THREADS=1
 
-# You should only edit the content between jsrun and ./hello_jsrun
-#jsrun -n1 -c1 -a1 -g1 ./Hello_jsrun/hello_jsrun | sort
-#jsrun -n6 -c7 -g1 -a1 ./Hello_jsrun/hello_jsrun | sort
-jsrun -n2 -c21 -g3 -a3 -bpacked:1 -dpacked ./Hello_jsrun/hello_jsrun | sort
+# Here, you should only edit the flags between jsrun and ./hello_jsrun
+jsrun -n1 -c1 -a1 -g1 ./hello_jsrun | sort
