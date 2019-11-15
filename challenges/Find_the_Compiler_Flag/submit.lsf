@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #BSUB -P STF007
-#BSUB -J add_vec
-#BSUB -o add_vec.%J
+#BSUB -J add_vec_acc
+#BSUB -o add_vec_acc.%J
 #BSUB -nnodes 1
 #BSUB -W 10
 
