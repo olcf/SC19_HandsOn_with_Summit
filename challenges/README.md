@@ -5,11 +5,11 @@
 Each challenge is a stand-alone unit. It is not necessary to complete challenge `n-1` before taking on challenge `n`. ([Obtain_Access_to_Summit](Obtain_Access_to_Summit) is an exception, of course!)
 
 To get started, please complete the challenge labeled
-[Obtain_Access_to_Summit](Obtain_Access_to_Summit). After you finish, you
+[Access_Summit_and_Clone_Repo](Access_Summit_and_Clone_Repo). After you finish, you
 can continue with the next challenge or jump around to complete any of the
 challenges listed below.
 
-- [Obtain_Access_to_Summit](Obtain_Access_to_Summit) <img src="../images/easy_badge.png" width="80">
+- [Access_Summit_and_Clone_Repo](Access_Summit_and_Clone_Repo) <img src="../images/easy_badge.png" width="80">
 - [Basic_Workflow](Basic_Workflow) <img src="../images/easy_badge.png" width="80">
 - [Password_in_a_Haystack](Password_in_a_Haystack) <img src="../images/easy_badge.png" width="80">
 - [Find_the_Compiler_Flag](Find_the_Compiler_Flag) <img src="../images/easy_badge.png" width="80">
