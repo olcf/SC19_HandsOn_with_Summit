@@ -1,6 +1,6 @@
-# Obtaining Access to Summit
+# Obtaining Access to Summit and Clone Repository
 
-Please follow the instructions below to obtain access to OLCF's Summit Supercomputer.
+Please follow the instructions below to obtain access to OLCF's Summit Supercomputer and grab a copy of the code we'll be using.
 
 ## Step 1: Get an RSA token
 
@@ -37,6 +37,29 @@ When prompted for your PASSCODE, enter your PIN followed by the 6 digits shown o
 
 > <strong>NOTE:</strong> The 6-digit code displayed on the SecurID token can only be used once. If prompted for multiple PASSCODE entries, always allow the 6-digit code to change between entries. Re-using the 6-digit code can cause your account to be automatically disabled.
 
-Once you have successfully logged in to Summit, you can move on to other challenges.
+Once you have successfully logged in to Summit, you can move on to Step 3.
+
+## Step 3: Clone GitHub Repository for this Event
+
+GitHub is a code-hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. For instance, we used GitHub to host, and track our changes to, the code for this event. Below, you will grab a copy of this GitHub repository to get access to the code.
+
+### Clone the Repository
+
+In order to continue with the other challenges, you will need to `clone` a copy of our repository. To do so, make sure you're in your "home" directory and issue the command:
+
+```
+$ cd /ccs/home/userid
+$ git clone https://github.com/olcf/SC19_HandsOn_with_Summit.git
+```
+
+> NOTE: `git` itself is different than GitHub. It is a tool that developers install locally to manage version control and interact with remote code-hosting sites like GitHub.
+
+This will add the code directory within your current directory. Now move into that directory:
+
+```
+$ cd SC19_HandsOn_with_Summit
+```
+
+Congratulations! You've completed your first challenge and can now move on to other challenges. Feel free to jump around to the ones you find most interesting.
 
 <hr>
