@@ -2,12 +2,9 @@
 
 # Challenges
 
-Each challenge is a stand-alone unit. It is not necessary to complete challenge `n-1` before taking on challenge `n`. ([Obtain_Access_to_Summit](Obtain_Access_to_Summit) is an exception, of course!)
+Each challenge is a stand-alone unit. It is not necessary to complete challenges in any particular order. The exception to this rule is [Access_Summit_and_Clone_Repo](Access_Summit_and_Clone_Repo). Of course, we recommend starting there.
 
-To get started, please complete the challenge labeled
-[Access_Summit_and_Clone_Repo](Access_Summit_and_Clone_Repo). After you finish, you
-can continue with the next challenge or jump around to complete any of the
-challenges listed below.
+After you finish, you can continue with the next challenge or jump around to take on any of the others listed below.
 
 - [Access_Summit_and_Clone_Repo](Access_Summit_and_Clone_Repo) <img src="../images/easy_badge.png" width="80">
 - [Basic_Workflow](Basic_Workflow) <img src="../images/easy_badge.png" width="80">
