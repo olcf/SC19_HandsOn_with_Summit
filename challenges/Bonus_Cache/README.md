@@ -1,5 +1,3 @@
-[**Previous**](../XX)
-
 # Bonus Cache
 
 Recall that Summit's compute nodes are IBM AC922 servers, each with 2x 22-core Power9 CPUs. The [IBM AC922 Redbook](http://www.redbooks.ibm.com/redpapers/pdfs/redp5494.pdf) (technical product specification) reports that 512KB of L2 cache and up to 10MB of L3 cache is shared by each pair of cores. (Section 1.1, Page 3)
