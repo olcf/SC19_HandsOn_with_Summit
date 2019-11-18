@@ -1,5 +1,3 @@
-
-
 # Welcome to the SC19 Hands-On with Summit session!
 
 This repository contains the materials for the *[Hands-On with the Summit Supercomputer](https://sc19.supercomputing.org/presentation/?id=pec111&sess=sess412)* at SC19.
@@ -15,11 +13,19 @@ Summit, located at [Oak Ridge National Laboratory](https://www.ornl.gov/) in Oak
 - Total System Memory >10PB DDR4 + HBM + NVME
 
 ### Navigating this Session
-Here you will find the [session agenda](agenda.md) along with various resources to help get you up and running on Summit. We'll take a deep look at the system's design, discuss how research teams write programs for and run workloads on Summit, and you'll get to run your own. The session is guided by hands-on [***challenges***](challenges). 
+Here you will find the [session agenda](agenda.md) along with various resources
+to help get you up and running on Summit. We'll take a deep look at the
+system's design, discuss how research teams write programs for and run
+workloads on Summit, and you'll get to run your own. The session is guided by
+hands-on [***challenges***](challenges). 
 
-The [first challenge](./challenges/01_Obtain_Access_to_Summit) is to successfully log into Summit.
+The [first challenge](./challenges/Access_Summit_and_Clone_Repo) is to
+successfully log into Summit and clone this repository.
 
-Each challenge has its own sub-directory under `/challenges/`, and includes a README.md file and any additional files for that challenge. Challenges range in difficulty from introductory to very complex, and may require research and reference materials outside of what's provided in this repository.
+Each challenge has its own sub-directory under `/challenges/`, and includes a
+README.md file and any additional files for that challenge. Challenges range in
+difficulty from introductory to very complex, and may require research and
+reference materials outside of what's provided in this repository.
 
 ##### *P.S. Be on the lookout for giveaways hidden throughout!* 
 
