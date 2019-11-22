@@ -1,12 +1,13 @@
 #!/bin/bash
 
-#BSUB -P STF007
+#BSUB -P TRN001
 #BSUB -W 10
 #BSUB -nnodes 1
 #BSUB -J testing_jsrun
 #BSUB -o testing_jsrun.%J
 #BSUB -e testing_jsrun.%J
 #BSUB -alloc_flags "gpumps"
+#BSUB -U StudentsSC19
 
 # -n 			(number of resource sets)
 # -c 			(number of physical CPU cores per resource set)

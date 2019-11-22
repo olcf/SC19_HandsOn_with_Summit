@@ -1,11 +1,12 @@
 #!/bin/bash
 
-#BSUB -P STF007
+#BSUB -P TRN001
 #BSUB -W 10
 #BSUB -nnodes 1
 #BSUB -J 02_gpu
 #BSUB -o 02_gpu.%J
 #BSUB -e 02_gpu.%J
+#BSUB -U StudentsSC19
 
 export OMP_NUM_THREADS=2
 
