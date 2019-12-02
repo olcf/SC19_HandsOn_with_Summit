@@ -1,11 +1,12 @@
 #!/bin/bash
 
-#BSUB -P STF007
+#BSUB -P TRN001
 #BSUB -W 10
 #BSUB -nnodes 1
 #BSUB -J 42_omp
 #BSUB -o 42_omp.%J
 #BSUB -e 42_omp.%J
+#BSUB -U StudentsSC19
 
 export OMP_NUM_THREADS=42
 
